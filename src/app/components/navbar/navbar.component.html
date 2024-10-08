@@ -1,0 +1,14 @@
+<nav>
+    <mat-toolbar class="justify-content-between shadow" color="accent">
+      <div class="fs-2" (click)="redirectHome()" role="button">Soffy.AI</div>
+      
+      <div *ngIf="user; else loginButton">
+        <span class="text-dark">{{ user.name }}</span> | <span (click)="logout()" role="button">Logout</span>
+      </div>
+      <ng-template #loginButton>
+        <span routerLink="/login" role="button">Login</span> 
+      </ng-template>
+    </mat-toolbar>
+  </nav>
+  
+  <!-- *ngIf="; else loginButton" -->

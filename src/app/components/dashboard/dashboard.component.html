@@ -1,0 +1,9 @@
+<div class="d-flex flex-column justify-content-center align-items-center mt-5">
+<ng-container *ngIf="userProfile">
+    <div class="ratio ratio-1x1" style="width: 90px;">
+        <img src="{{userProfile.picture}}" class="object-fit-cover rounded-circle" style="width: 100%;" alt="User Picture">
+      </div>
+    <div class="text-center fs-2">Welcome, {{ userProfile.name }}</div>
+  </ng-container>
+</div>
+  <!-- <button id="signout-button" (click)="handleSignOut()">Sign Out</button> -->
